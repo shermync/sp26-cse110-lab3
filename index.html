@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Meeting Minutes </title>
+    <link rel="icon" href="favicon.ico" />
+     
+  </head>
+  <body>
+    <div class ="Header">
+      
+      <h1> Group 4 Kickoff Meeting </h1>
+      <h2> <i>Objective: Reviewing assignment description, delegating tasks </i></h2>
+      
+    </div>
+
+    
+    <section>
+      <p> <strong>Date & Time: </strong> 04/12/2026, 3:15p.m. - 5.30p.m. </p>
+      <p> <b>Attendance: </b> Anika Dontu, Phuong Dinh, Albert Bunyi, Anish Kondamadugula, Antonio Didjusto, Jack Xiang, Kalyssa Choy, Rohaan Sandhu, Shermyn Cheah, Yifei Du, Zachary Huang</p>
+    </section>
+
+    <nav>
+      <a href = "#agenda"> Agenda </a>  |
+      <a href = "#action"> Action Items </a>  |
+      <a href = "#form"> Forms </a>
+    </nav>
+    <br>
+
+    <hr>
+    <main>
+      <h2 id="agenda">  Agenda  </h2>
+      
+        <ul>
+          <li> <i>Discuss weekly meeting logistics </i></li>
+          <li> <em>Write Team Contract </em></li>
+          <li> Discuss AI Slot Machine Experiment </li>
+          <li> Brainstorm team branding</li>
+          <li> Assign Tasks </li>
+        </ul>
+      
+      
+      <hr>
+
+      <h2 id="action"> Action Items </h2>
+      
+        <ol>
+          <li> Create group logo (Kalyssa; Due Sunday) </li>
+          <li> Create team page markdown (Jack; Due Sunday) </li>
+          <li> Sign individual contracts (All; Due Sunday) </li>
+          <li> <span style="color:blueviolet"> Slot machine assignment: </span> Complete 50 runs (Jack, Albert, Anika, Anish, Shermyn; Due Monday) </li>
+        </ol>
+      
+      
+      <details>
+        <Summary> Slot Machine Task Details: (image)</Summary>
+      <img src ="img.png" alt="Slot Machine Task Details">
+      </details>
+      <hr>
+
+      <p> Audio and Video: </p>
+      <p> <video src = "video.MOV" width = "300" height = "300" controls></video></p>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mp3" />
+      </audio>
+
+      <hr>
+
+      <h2 id="form"> Form </h2>
+      <form>
+        <fieldset>
+        <label for="name"> Name: </label>
+        <input type = "text" id="name" name="name"><br>
+
+        <label for="dob"> Date of Birth: </label>
+        <input type = "date" id="dob" name="dob"><br>
+
+        <p> Languages Spoken: </p>
+        <input type="checkbox" id="eng" name="lang" value="eng">
+          <label for="eng">English</label><br>
+        <input type="checkbox" id="spa" name="lang" value="spa">
+          <label for="spa">Spanish</label><br>
+        <input type="checkbox" id="cn" name="lang" value="cn">
+          <label for="cn">Chinese</label><br>
+        <input type="checkbox" id="other" name="lang" value="other">
+          <label for="other">Other</label><br>
+
+        <p> Favorite Programming Language: </p>
+        <input type="radio" id="javascript" name="favLang" value="JavaScript">
+          <label for="javascript">JavaScript</label><br>
+        <input type="radio" id="C" name="favLang" value="C">
+          <label for="C">C / C++</label><br>
+        <input type="radio" id="python" name="favLang" value="python">
+          <label for="python">Python</label><br>
+        <input type="radio" id="assembly" name="favLang" value="assembly">
+          <label for="assembly">Assembly</label><br>
+
+        <p> <label for = "reason">Reason:  </label></p>
+        <textarea id="reason" name = "reason" rows = "3" cols="50"></textarea><br><br>
+    
+        <label> Primary operating system: </label>
+        <input list="os" name="os" id="osList">
+        <datalist id = "os">
+          <option value = "Windows">
+          <option value = "Linux">
+          <option value = "MacOS">
+          <option value = "Android">
+        </datalist>
+        <br>
+        <label for = "device"> Primary device: </label>
+        <select id = "device">
+          <option value = "Phone"> Phone </option>
+          <option value = "Tablet"> Tablet </option>
+          <option value = "Computer"> Computer </option>
+        </select>
+        <br>
+        <button type="submit"> Submit </button>
+        </fieldset>
+        </form>
+    </main>
+    
+  </body>
+</html>
