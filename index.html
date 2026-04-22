@@ -4,19 +4,35 @@
     <meta charset="utf-8">
     <title> Meeting Minutes </title>
     <link rel="icon" href="favicon.ico" />
-     
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        background-color: hsl(60, 26%, 93%);
+        font-family: Verdana, sans-serif;
+        margin: 10px 10px 10px 10px;
+      }
+
+      h1,h2 {
+        font-family: 'Gelasio', sans-serif;
+        color: #86cece;
+        text-align: center;
+      }
+    </style>
   </head>
+
   <body>
-    <div class ="Header">
-      
-      <h1> Group 4 Kickoff Meeting </h1>
-      <h2> <i>Objective: Reviewing assignment description, delegating tasks </i></h2>
-      
+    <div class ="header">
+      <h1 style="margin-top: 3%"> Group 4 Kickoff Meeting </h1>
+      <h2 style="color:rgb(0,0,0)"> <i>Objective: Reviewing assignment description, delegating tasks </i></h2>
     </div>
 
     
     <section>
-      <p> <strong>Date & Time: </strong> 04/12/2026, 3:15p.m. - 5.30p.m. </p>
+      <p style = "color:darkcyan"> <strong>Date & Time: </strong> 04/12/2026, 3:15p.m. - 5.30p.m. </p>
       <p> <b>Attendance: </b> Anika Dontu, Phuong Dinh, Albert Bunyi, Anish Kondamadugula, Antonio Didjusto, Jack Xiang, Kalyssa Choy, Rohaan Sandhu, Shermyn Cheah, Yifei Du, Zachary Huang</p>
     </section>
 
@@ -29,7 +45,7 @@
 
     <hr>
     <main>
-      <h2 id="agenda">  Agenda  </h2>
+      <h3 id="agenda">  Agenda  </h3>
       
         <ul>
           <li> <i>Discuss weekly meeting logistics </i></li>
@@ -42,7 +58,7 @@
       
       <hr>
 
-      <h2 id="action"> Action Items </h2>
+      <h3 id="action"> Action Items </h3>
       
         <ol>
           <li> Create group logo (Kalyssa; Due Sunday) </li>
@@ -66,7 +82,7 @@
 
       <hr>
 
-      <h2 id="form"> Form </h2>
+      <h3 id="form"> Form </h3>
       <form>
         <fieldset>
         <label for="name"> Name: </label>
@@ -75,15 +91,28 @@
         <label for="dob"> Date of Birth: </label>
         <input type = "date" id="dob" name="dob"><br>
 
+        
         <p> Languages Spoken: </p>
-        <input type="checkbox" id="eng" name="lang" value="eng">
-          <label for="eng">English</label><br>
-        <input type="checkbox" id="spa" name="lang" value="spa">
-          <label for="spa">Spanish</label><br>
-        <input type="checkbox" id="cn" name="lang" value="cn">
-          <label for="cn">Chinese</label><br>
-        <input type="checkbox" id="other" name="lang" value="other">
-          <label for="other">Other</label><br>
+        <div class ="language">
+          <input type="checkbox" id="eng" name="lang" value="eng">
+          <label for="eng">English</label> 
+        </div>
+
+        <div class ="language"> 
+          <input type="checkbox" id="spa" name="lang" value="spa">
+          <label for="spa">Spanish</label>
+        </div>
+        
+        <div class ="language">
+          <input type="checkbox" id="cn" name="lang" value="cn">
+          <label for="cn">Chinese</label> 
+        </div>
+
+        <div class ="language">
+          <input type="checkbox" id="other" name="lang" value="other">
+          <label for="other">Other</label>
+        </div>
+        </div>
 
         <p> Favorite Programming Language: </p>
         <input type="radio" id="javascript" name="favLang" value="JavaScript">
