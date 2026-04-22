@@ -1,0 +1,93 @@
+@media only screen and (max-width: 600px){
+    *{
+        font-size: 14px;
+    }
+}
+
+h3 {
+    color: darkcyan;
+    font-family: 'Gelasio', sans-serif;
+}
+
+/* style Objective header*/ 
+h2 {
+    text-decoration: underline;
+    font-size: medium;
+    margin: auto;
+}
+
+#form ~ form label {
+    color: darkcyan;
+    font-size: 0.8em;
+}
+
+section {
+    display: block;
+    position: relative;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 5mm;
+    margin-right: 5px;
+}
+
+/* Add space between Date & Time and Attendance */
+section p + p{
+    margin-top: 20px;
+}
+
+/* style for navbar */
+nav {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-family: 'Gelasio', sans-serif;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 4px;
+    border-color: #86cece;
+    /* padding: <top> <right> <bottom> <left>*/
+    padding: 10px 10px 10px 10px;
+}
+
+nav a {
+    color: color(display-p3 0.04 0.07 0.07);
+    text-decoration: none;
+    position: static;
+    max-width: none;
+    min-width: fit-content;
+
+    &:hover {
+        color:darkcyan;
+        text-decoration: underline;
+    }
+}
+
+
+
+button:active {
+    color:darkcyan;
+    border-color: darkcyan;
+    background-color: color-mix(in hsl, beige 80%, darkcyan 20%);
+}
+
+/* Agenda section */
+ul > li {
+    display: inline-block;
+    width: auto;
+    height: fit-content;
+}
+
+/* Languages spoken section (Form)*/
+div.language{
+    display:grid;
+    grid-template-columns: min-content auto;
+    grid-auto-rows: max-content;
+    grid-auto-columns: max-content;
+}
+
+.language:has(input:checked) {
+    border: 1px solid darkcyan;
+    border-width: 0.4vw;
+}
